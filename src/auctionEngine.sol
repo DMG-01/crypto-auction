@@ -75,6 +75,9 @@ uint totalFailedBid = otherBidders[msg.sender];
     payable(msg.sender).transfer(totalFailedBid);
 }
 
-
+ /*********GETTER FUNCTION */
+ function getAuctionFee() public pure returns(uint256){
+  return AUCTION_FEE;
+ }
 
 }
